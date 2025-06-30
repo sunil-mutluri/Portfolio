@@ -43,7 +43,7 @@ export const About: React.FC = () => {
         >
           <div className="relative w-96 h-96 mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-gradient-to-br from-white/60 to-slate-100/60 backdrop-blur-sm border border-white/20 shadow-2xl">
             <img 
-              src="/src/assets/Adobe Express - file.png"
+              src="/src/assets/AdobeExpress-file.png"
               alt="Sunil Kumar Mutluri"
               className="w-full h-full object-cover object-center"
             />
@@ -210,25 +210,7 @@ export const About: React.FC = () => {
               </div>
             </motion.div>
 
-            {/* Web Development Icons */}
-            <motion.div variants={bounceIn} className="space-y-4">
-              <h4 className="text-lg font-medium text-slate-600 border-b border-slate-200 pb-2">
-                Web Development
-              </h4>
-              <div className="flex flex-wrap gap-4">
-                {webDevSkills.map((skill, index) => (
-                  <motion.div
-                    key={skill.name}
-                    variants={bounceIn}
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${skill.color} rounded-full text-white font-medium shadow-lg text-sm`}
-                  >
-                    <skill.icon size={16} />
-                    <span>{skill.name}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
+           
           </div>
         </motion.div>
       </motion.div>
