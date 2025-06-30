@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Brain, Code, TrendingUp, Zap, Coffee, Database, Globe, Server, BarChart3, GitBranch, Cloud, Cpu, PieChart, Activity } from 'lucide-react';
 import { fadeInLeft, fadeInRight, staggerContainer, bounceIn } from '../utils/animations';
+import ProfileImage from '../assets/AdobeExpress-file.png';
+
 
 const dataToolsSkills = [
   { name: "SQL", icon: Database, level: 92, color: "from-blue-600 to-cyan-600" },
@@ -42,11 +44,12 @@ export const About: React.FC = () => {
           className="relative group"
         >
           <div className="relative w-96 h-96 mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-gradient-to-br from-white/60 to-slate-100/60 backdrop-blur-sm border border-white/20 shadow-2xl">
-            <img 
-              src="/src/assets/AdobeExpress-file.png"
-              alt="Sunil Kumar Mutluri"
-              className="w-full h-full object-cover object-center"
+            <img
+            src={ProfileImage}
+            alt="Sunil Kumar Mutluri"
+            className="w-full h-full object-cover object-center"
             />
+
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
           </div>
           
