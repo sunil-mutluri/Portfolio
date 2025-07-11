@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Wrench } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import { fadeInUp, staggerContainer } from '../utils/animations';
 
 const projects = [
@@ -8,7 +8,7 @@ const projects = [
     title: "Decentralized Heart Rate Monitoring - Blockchain",
     description: "Secure heart rate tracking using smart contracts and IPFS for healthcare data privacy.",
     tech: ["Solidity", "IPFS", "React", "MetaMask"],
-    image: "https://images.pexels.com/photos/8376193/pexels-photo-8376193.jpeg?auto=compress&cs=tinysrgb&w=800", // heart + tech
+    image: "https://images.pexels.com/photos/8376193/pexels-photo-8376193.jpeg?auto=compress&cs=tinysrgb&w=800",
     github: "https://github.com/sunil-mutluri/Blockchain_Project",
     color: "from-red-500/20 to-pink-500/20"
   },
@@ -16,7 +16,7 @@ const projects = [
     title: "Real-Time Threat Data Intelligence",
     description: "AI-driven platform for cybersecurity threat detection and analysis.",
     tech: ["Python", "Open AI", "SIEM", "ML"],
-    image: "https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800", // security dashboard
+    image: "https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800",
     github: "https://github.com",
     color: "from-indigo-500/20 to-blue-500/20"
   },
@@ -24,7 +24,7 @@ const projects = [
     title: "Big Data Visualization of Wind Energy Consumption",
     description: "Interactive dashboards and geospatial analytics for wind energy utilization insights.",
     tech: ["Apache Spark", "Tableau", "GeoPandas", "PostgreSQL"],
-    image: "https://images.pexels.com/photos/532192/pexels-photo-532192.jpeg?auto=compress&cs=tinysrgb&w=800", // wind turbines
+    image: "https://images.pexels.com/photos/532192/pexels-photo-532192.jpeg?auto=compress&cs=tinysrgb&w=800",
     github: "https://github.com/sunil-mutluri/BIgData-Visualization",
     color: "from-emerald-500/20 to-green-500/20"
   },
@@ -32,7 +32,7 @@ const projects = [
     title: "Ride-Sharing Platform",
     description: "Blockchain-based DApp for peer-to-peer ride sharing with real-time tracking.",
     tech: ["Tailwind", "Web3.js", "React Native", "Node.js"],
-    image: "https://images.pexels.com/photos/4606330/pexels-photo-4606330.jpeg?auto=compress&cs=tinysrgb&w=800", // car ride concept
+    image: "https://images.pexels.com/photos/4606330/pexels-photo-4606330.jpeg?auto=compress&cs=tinysrgb&w=800",
     github: "https://github.com/sunil-mutluri/ride-sharing-platform",
     color: "from-amber-500/20 to-yellow-500/20"
   },
@@ -40,12 +40,11 @@ const projects = [
     title: "Interactive LED Canvas Using ESP32 and AI",
     description: "An AI-powered interactive art board controlled via hand gestures and ESP32.",
     tech: ["ESP32", "React.js", "LED Matrix", "HuggingFace"],
-    image: "https://images.pexels.com/photos/11035636/pexels-photo-11035636.jpeg?auto=compress&cs=tinysrgb&w=800", // glowing LED hands
+    image: "https://images.pexels.com/photos/11035636/pexels-photo-11035636.jpeg?auto=compress&cs=tinysrgb&w=800",
     github: "https://github.com/sunil-mutluri/IOT_Project",
     color: "from-purple-500/20 to-violet-500/20"
   }
 ];
-
 
 export const Projects: React.FC = () => {
   return (
@@ -67,16 +66,11 @@ export const Projects: React.FC = () => {
             SELECTED WORK
           </p>
           <h2 className="text-5xl md:text-6xl font-light mb-6 text-slate-800 leading-tight">
-            Featured
-            <br />
+            Featured<br />
             <span className="italic">projects</span>
           </h2>
           <p className="text-xl text-slate-500 max-w-2xl mx-auto font-light">
-<<<<<<< HEAD
-            A showcase of full-stack solutions that translate real-world problems into elegant, scalable software
-=======
-            A collection of data-driven solutions that transform business challenges into opportunities
->>>>>>> 0255919 (Initial commit with Vite + GitHub Pages config)
+            A showcase of full-stack and data-driven solutions that transform real-world challenges into elegant, scalable software.
           </p>
         </motion.div>
 
@@ -85,23 +79,21 @@ export const Projects: React.FC = () => {
             <motion.div
               key={project.title}
               variants={fadeInUp}
-              whileHover={{ 
+              whileHover={{
                 y: -20,
                 scale: 1.02,
                 transition: { duration: 0.4, ease: "easeOut" }
               }}
               className="group relative bg-white/60 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/20 shadow-xl hover:shadow-2xl transition-all duration-500"
             >
-              {/* Project Image */}
+              {/* Image */}
               <div className="relative h-64 overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-t ${project.color} to-transparent opacity-60`}></div>
-                
-                {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                   <motion.a
                     href={project.github}
@@ -116,7 +108,7 @@ export const Projects: React.FC = () => {
                 </div>
               </div>
 
-              {/* Project Content */}
+              {/* Text Content */}
               <div className="p-8">
                 <h3 className="text-2xl font-light text-slate-800 mb-3 group-hover:text-slate-600 transition-colors">
                   {project.title}
@@ -124,11 +116,10 @@ export const Projects: React.FC = () => {
                 <p className="text-slate-500 text-sm mb-6 leading-relaxed font-light">
                   {project.description}
                 </p>
-                
-                {/* Tech Stack */}
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech) => (
-                    <span 
+                    <span
                       key={tech}
                       className="px-3 py-1 bg-slate-100/80 text-slate-600 text-xs font-medium rounded-full border border-slate-200/50"
                     >
@@ -137,7 +128,6 @@ export const Projects: React.FC = () => {
                   ))}
                 </div>
 
-                {/* Action Button */}
                 <motion.a
                   href={project.github}
                   target="_blank"
@@ -155,8 +145,4 @@ export const Projects: React.FC = () => {
       </motion.div>
     </section>
   );
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 0255919 (Initial commit with Vite + GitHub Pages config)

@@ -52,16 +52,11 @@ export const Contact: React.FC = () => {
             GET IN TOUCH
           </p>
           <h2 className="text-5xl md:text-6xl font-light mb-6 text-slate-800 leading-tight">
-            Let's
-            <br />
+            Let's<br />
             <span className="italic">connect</span>
           </h2>
           <p className="text-xl text-slate-500 max-w-2xl mx-auto font-light">
-<<<<<<< HEAD
-            Ready to ship your next feature or fix that bottleneck? Let’s talk code over virtual coffee.
-=======
             Ready to transform data into insights? Let's chat about your next project over virtual coffee.
->>>>>>> 0255919 (Initial commit with Vite + GitHub Pages config)
           </p>
         </motion.div>
 
@@ -203,8 +198,4 @@ export const Contact: React.FC = () => {
       </motion.div>
     </section>
   );
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 0255919 (Initial commit with Vite + GitHub Pages config)
