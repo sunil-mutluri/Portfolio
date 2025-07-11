@@ -2,20 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Sunil Kumar Mutluri - Software Engineer</title>
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
     <style>
       /* Custom cursor */
       * {
         cursor: none;
       }
-      
+
       .custom-cursor {
         position: fixed;
         top: 0;
@@ -29,90 +30,85 @@
         mix-blend-mode: difference;
         transition: transform 0.1s ease;
       }
-      
+
       .custom-cursor.hover {
         transform: scale(1.5);
       }
-      
+
       /* Scrollbar styling */
       ::-webkit-scrollbar {
         width: 8px;
       }
-      
+
       ::-webkit-scrollbar-track {
         background: rgba(148, 163, 184, 0.1);
       }
-      
+
       ::-webkit-scrollbar-thumb {
         background: linear-gradient(45deg, #3b82f6, #8b5cf6);
         border-radius: 4px;
       }
-      
+
       ::-webkit-scrollbar-thumb:hover {
         background: linear-gradient(45deg, #2563eb, #7c3aed);
       }
-      
+
       /* Hide scrollbar for mobile */
       .scrollbar-hide {
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
-      
+
       .scrollbar-hide::-webkit-scrollbar {
         display: none;
       }
     </style>
   </head>
+
   <body class="bg-gradient-to-br from-slate-50 via-blue-50/20 to-purple-50/10 text-slate-800">
     <div id="root"></div>
     <div class="custom-cursor"></div>
+
     <script type="module" src="/src/main.tsx"></script>
     <script>
       console.log("🐱 Found the source, curious cat! Welcome to my digital laboratory.");
-      
-      // Custom cursor
+
+      // Custom cursor logic
       const cursor = document.querySelector('.custom-cursor');
-      let mouseX = 0;
-      let mouseY = 0;
-      let cursorX = 0;
-      let cursorY = 0;
-      
+      let mouseX = 0, mouseY = 0;
+      let cursorX = 0, cursorY = 0;
+
       document.addEventListener('mousemove', (e) => {
         mouseX = e.clientX;
         mouseY = e.clientY;
       });
-      
+
       document.addEventListener('mouseenter', () => {
         cursor.style.opacity = '1';
       });
-      
+
       document.addEventListener('mouseleave', () => {
         cursor.style.opacity = '0';
       });
-      
-      // Smooth cursor animation
+
       function animateCursor() {
         const dx = mouseX - cursorX;
         const dy = mouseY - cursorY;
-        
         cursorX += dx * 0.1;
         cursorY += dy * 0.1;
-        
-        cursor.style.left = cursorX + 'px';
-        cursor.style.top = cursorY + 'px';
-        
+        cursor.style.left = `${cursorX}px`;
+        cursor.style.top = `${cursorY}px`;
         requestAnimationFrame(animateCursor);
       }
-      
+
       animateCursor();
-      
-      // Hover effects
+
       document.addEventListener('mouseover', (e) => {
         if (e.target.matches('button, a, [role="button"]')) {
           cursor.classList.add('hover');
         }
       });
-      
+
       document.addEventListener('mouseout', (e) => {
         if (e.target.matches('button, a, [role="button"]')) {
           cursor.classList.remove('hover');
@@ -120,8 +116,4 @@
       });
     </script>
   </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 0255919 (Initial commit with Vite + GitHub Pages config)
