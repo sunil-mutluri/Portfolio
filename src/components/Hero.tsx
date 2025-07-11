@@ -14,15 +14,18 @@ const roles = [
 ];
 
 const techStack = [
-  { name: "Python", icon: Code, color: "from-amber-400/80 to-orange-500/80" },
-  { name: "SQL", icon: Database, color: "from-blue-400/80 to-indigo-500/80" },
-  { name: "Power BI", icon: BarChart3, color: "from-emerald-400/80 to-teal-500/80" },
-  { name: "AI & ML", icon: Brain, color: "from-purple-400/80 to-pink-500/80" },
-  { name: "AWS", icon: Cloud, color: "from-orange-400/80 to-red-500/80" },
-  { name: "React", icon: Cloud, color: "from-indigo-400/80 to-amber-500/80" },
-  { name: "TypeScript", icon: Cloud, color: "from-green-400/80 to-brown-500/80" },
-  { name: "Node.js", icon: Cloud, color: "from-red-400/80 to-blue-500/80" }
+  { name: "JavaScript", icon: Code, color: "from-yellow-400/80 to-orange-500/80" },
+  { name: "React", icon: Brain, color: "from-cyan-400/80 to-blue-500/80" },
+  { name: "Node.js", icon: Server, color: "from-green-400/80 to-emerald-500/80" },
+   { name: "TypeScript", icon: Code, color: "from-blue-400/80 to-purple-500/80" },
+  { name: "MongoDB", icon: Database, color: "from-green-500/80 to-teal-600/80" },
+  { name: "PostgreSQL", icon: Database, color: "from-indigo-400/80 to-indigo-600/80" },
+  { name: "Git & GitHub", icon: GitBranch, color: "from-gray-500/80 to-black/80" },
+  { name: "Docker", icon: Cloud, color: "from-blue-500/80 to-sky-600/80" },
+  { name: "CI/CD", icon: TrendingUp, color: "from-violet-400/80 to-fuchsia-500/80" },
+  { name: "Agile & Scrum", icon: Cpu, color: "from-pink-400/80 to-rose-500/80" }
 ];
+
 
 export const Hero: React.FC = () => {
   const [currentRole, setCurrentRole] = useState(0);

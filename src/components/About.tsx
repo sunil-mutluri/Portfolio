@@ -1,24 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import {
-  Brain, Code, TrendingUp, Zap, Coffee, Database, GitBranch,
-  Cloud, Activity, PieChart, BarChart3
-} from 'lucide-react';
+import { Brain, Code, TrendingUp, Zap, Coffee, Database, Globe, Server, BarChart3, GitBranch, Cloud, Cpu, PieChart, Activity } from 'lucide-react';
 import { fadeInLeft, fadeInRight, staggerContainer, bounceIn } from '../utils/animations';
 import ProfileImage from '../assets/AdobeExpress-file.png';
 
+
 const dataToolsSkills = [
-  { name: "Java", icon: Code, level: 93, color: "from-red-600 to-orange-600" },
-  { name: "React", icon: BarChart3, level: 90, color: "from-sky-500 to-indigo-500" },
+   { name: "Java", icon: Code, level: 93, color: "from-red-600 to-orange-600" },
+   { name: "React", icon: BarChart3, level: 90, color: "from-sky-500 to-indigo-500" },
   { name: "TypeScript", icon: Code, level: 95, color: "from-yellow-500 to-orange-500" },
   { name: "Node.js", icon: Activity, level: 88, color: "from-green-500 to-emerald-500" },
   { name: "SQL", icon: Database, level: 92, color: "from-blue-600 to-cyan-600" },
   { name: "Object-Oriented Design", icon: Brain, level: 91, color: "from-purple-500 to-pink-600" },
-  { name: "Power BI", icon: BarChart3, level: 88, color: "from-emerald-500 to-teal-600" },
-  { name: "Python", icon: Code, level: 95, color: "from-yellow-500 to-orange-600" },
-  { name: "Tableau", icon: PieChart, level: 85, color: "from-blue-500 to-indigo-600" },
-  { name: "Machine Learning", icon: Brain, level: 90, color: "from-purple-500 to-pink-600" },
-  { name: "Data Analysis", icon: Activity, level: 93, color: "from-green-500 to-emerald-600" }
 ];
 
 const cloudDevOpsSkills = [
@@ -28,9 +21,11 @@ const cloudDevOpsSkills = [
   { name: "Process Optimization", icon: Zap, level: 88, color: "from-amber-500 to-orange-600" },
 ];
 
+
 export const About: React.FC = () => {
   return (
     <section className="py-32 px-8 max-w-7xl mx-auto relative">
+      {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-100/40 to-purple-100/40 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-br from-emerald-100/40 to-teal-100/40 rounded-full blur-3xl"></div>
@@ -43,52 +38,76 @@ export const About: React.FC = () => {
         variants={staggerContainer}
         className="grid lg:grid-cols-2 gap-20 items-center"
       >
-        <motion.div variants={fadeInLeft} className="relative group">
+        {/* Profile Section with Real Photo */}
+        <motion.div 
+          variants={fadeInLeft}
+          className="relative group"
+        >
           <div className="relative w-96 h-96 mx-auto lg:mx-0 rounded-3xl overflow-hidden bg-gradient-to-br from-white/60 to-slate-100/60 backdrop-blur-sm border border-white/20 shadow-2xl">
             <img
-              src={ProfileImage}
-              alt="Sunil Kumar Mutluri"
-              className="w-full h-full object-cover object-center"
+            src={ProfileImage}
+            alt="Sunil Kumar Mutluri"
+            className="w-full h-full object-cover object-center"
             />
+
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
           </div>
-
-          <motion.div
-            animate={{ y: [0, -10, 0], rotate: [0, 5, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          
+          {/* Floating Elements */}
+          <motion.div 
+            animate={{ 
+              y: [0, -10, 0],
+              rotate: [0, 5, 0]
+            }}
+            transition={{ 
+              duration: 4, 
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
             className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg"
           >
             <Coffee className="text-white" size={24} />
           </motion.div>
-
-          <motion.div
-            animate={{ y: [0, 10, 0], rotate: [0, -5, 0] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          
+          <motion.div 
+            animate={{ 
+              y: [0, 10, 0],
+              rotate: [0, -5, 0]
+            }}
+            transition={{ 
+              duration: 3, 
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1
+            }}
             className="absolute -bottom-6 -left-6 w-14 h-14 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl shadow-lg"
           ></motion.div>
         </motion.div>
 
+        {/* Bio Content */}
         <motion.div variants={fadeInRight} className="space-y-10">
           <div>
-            <motion.p
+            <motion.p 
               variants={fadeInRight}
               className="text-sm uppercase tracking-[0.3em] text-slate-500 mb-4 font-light"
             >
               ABOUT ME
             </motion.p>
             <h2 className="text-5xl md:text-6xl font-light mb-8 text-slate-800 leading-tight">
-              Engineer turned<br />
-              <span className="italic">data whisperer</span>
+              Engineer turned
+              <br />
+              <span className="italic">Semi-Colon Slayer</span>
             </h2>
             <p className="text-xl text-slate-600 leading-relaxed mb-8 font-light">
-              Obsessed with prediction, process, and pasta.
+              Obsessed with systems, syntax, and spaghetti.
             </p>
             <p className="text-slate-500 leading-relaxed font-light mb-6">
-              I transform chaos into clarity through data-driven insights and predictive models. 
-              From building ML pipelines to crafting interactive dashboards and full-stack applications,
-              I bridge the gap between data science and modern web development.
+              I turn ideas into deploys and TODOs into shipped features.
+              From late-night merges to light-speed APIs,
+              I build stuff that works — and looks good doing it.
             </p>
-
+            
+            {/* Links */}
             <div className="flex gap-4 flex-wrap">
               <motion.a
                 href="https://github.com/sunil-mutluri/resume/blob/main/Sunil_Kumar_Mutluri_Resume.pdf"
@@ -120,12 +139,14 @@ export const About: React.FC = () => {
             </div>
           </div>
 
+          {/* Technical Expertise - Reorganized */}
           <div className="space-y-8">
             <h3 className="text-2xl font-light text-slate-700">Technical Expertise</h3>
-
+            
+            {/* Data Tools & Analytics - Now includes Tableau and Data Analysis */}
             <motion.div variants={bounceIn} className="space-y-4">
               <h4 className="text-lg font-medium text-slate-600 border-b border-slate-200 pb-2">
-                Data Tools & Analytics
+                Languages & Frameworks
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {dataToolsSkills.map((skill, index) => (
@@ -157,6 +178,7 @@ export const About: React.FC = () => {
               </div>
             </motion.div>
 
+            {/* Cloud & DevOps */}
             <motion.div variants={bounceIn} className="space-y-4">
               <h4 className="text-lg font-medium text-slate-600 border-b border-slate-200 pb-2">
                 Cloud & DevOps
@@ -190,6 +212,8 @@ export const About: React.FC = () => {
                 ))}
               </div>
             </motion.div>
+
+           
           </div>
         </motion.div>
       </motion.div>
