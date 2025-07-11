@@ -79,7 +79,7 @@ export const Hero: React.FC = () => {
 
       <motion.div className="text-center z-10 max-w-5xl mx-auto px-8" variants={staggerContainer} initial="hidden" animate="visible">
         <motion.p variants={fadeInUp} className="text-sm uppercase tracking-[0.3em] text-slate-500 mb-8 font-light">
-          const engineer = new ProblemSolver("full-stack", { coffee: true });
+          {/*const engineer = new ProblemSolver("full-stack", { coffee: true });*/}
         </motion.p>
 
         <motion.h1 variants={fadeInUp} className="text-6xl md:text-8xl lg:text-9xl font-extralight mb-6 text-slate-800 leading-[0.85] tracking-tight" style={{ fontFamily: "'Inter', sans-serif" }}>

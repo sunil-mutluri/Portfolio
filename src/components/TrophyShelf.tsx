@@ -1,47 +1,46 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Trophy, Medal, Award } from 'lucide-react';
 import { fadeInUp, staggerContainer } from '../utils/animations';
 
 const achievements = [
   {
     title: "Create agentic AI solutions with Azure AI Foundry",
-    image: "https://drive.google.com/file/d/1XvOOTChUADOonf6ODGJ2ZZLjc3myLm7i/view?usp=sharing",
+    image: "https://i.postimg.cc/50Rwpnk2/microsoft-certificate.png",
     emoji: "🏆",
     reaction: "Challenge!",
     color: "from-orange-400 to-red-500"
   },
   {
     title: "Oracle Fusion AI Agent Foundations",
-    image: "https://drive.google.com/file/d/1eyq0x20WJGjIAmekrcHOwKarIwDk3Q-J/view?usp=sharing",
+    image: "https://i.postimg.cc/W3C5tNV8/oracle-certified-aiagent.png",
     emoji: "⚡",
     reaction: "Certified!",
     color: "from-blue-400 to-indigo-500"
   },
   {
     title: "Google Machine Learning & AI Skill Badge",
-    image: "https://partner.cloudskillsboost.google/public_profiles/f9729671-fef6-4638-8064-593344ad558a/badges/16037466",
+    image: "https://i.postimg.cc/vH36vPgF/google-badges.png",
     emoji: "📊",
     reaction: "AI!",
     color: "from-green-400 to-emerald-500"
   },
   {
-    title: "Oracle Redwood Applications Viusal Builder",
-    image: "https://drive.google.com/file/d/13gb26JEuv2plOIIuRuB9p4pcZoWOIwhN/view?usp=sharing",
+    title: "Oracle Redwood Applications Visual Builder",
+    image: "https://i.postimg.cc/ZYL9TfLB/udemy.jpg",
     emoji: "👨‍💻",
     reaction: "Design Master!",
     color: "from-yellow-400 to-orange-500"
   },
   {
-    title: "Introduction to Data Engineering on Google Cloud",
-    image: "https://partner.cloudskillsboost.google/public_profiles/f9729671-fef6-4638-8064-593344ad558a/badges/14487009",
+    title: "Microsoft Badges - Azure AI",
+    image: "https://i.postimg.cc/d1sYn9Zp/microsoft-badges.png",
     emoji: "🥇",
-    reaction: "Data Engineer!",
+    reaction: "AI Agent!",
     color: "from-purple-400 to-pink-500"
   },
   {
-    title: "Oracle HCMEssentials" ,
-    image: "https://drive.google.com/file/d/1qezTyI5vZiisj-SCXY-FQ6eOdWJFaVDn/view?usp=sharing",
+    title: "Oracle HCMEssentials",
+    image: "https://i.postimg.cc/ydgwLrYf/oracle-hcm.png",
     emoji: "📈",
     reaction: "Viz Wizard!",
     color: "from-teal-400 to-cyan-500"
@@ -55,8 +54,8 @@ export const TrophyShelf: React.FC = () => {
     <section className="py-32 px-8 max-w-7xl mx-auto relative">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 right-20 w-80 h-80 bg-gradient-to-br from-yellow-100/40 to-orange-100/40 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-gradient-to-br from-purple-100/40 to-pink-100/40 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 right-20 w-80 h-80 bg-gradient-to-br from-yellow-100/40 to-orange-100/40 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-gradient-to-br from-purple-100/40 to-pink-100/40 rounded-full blur-3xl" />
       </div>
 
       <motion.div
@@ -85,7 +84,7 @@ export const TrophyShelf: React.FC = () => {
             <motion.div
               key={achievement.title}
               variants={fadeInUp}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
                 y: -10,
                 transition: { duration: 0.3 }
@@ -95,19 +94,15 @@ export const TrophyShelf: React.FC = () => {
               className="relative group cursor-pointer"
             >
               <div className="aspect-square relative overflow-hidden rounded-2xl bg-white/60 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-xl transition-all duration-500">
-                <img 
+                <img
                   src={achievement.image}
                   alt={achievement.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t ${achievement.color} opacity-20 group-hover:opacity-40 transition-opacity duration-500`}></div>
-                
-                {/* Emoji Badge */}
+                <div className={`absolute inset-0 bg-gradient-to-t ${achievement.color} opacity-20 group-hover:opacity-40 transition-opacity duration-500`} />
                 <div className="absolute top-3 right-3 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-lg shadow-lg">
                   {achievement.emoji}
                 </div>
-
-                {/* Title */}
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-xs font-medium text-white leading-tight drop-shadow-lg">
                     {achievement.title}
@@ -115,7 +110,6 @@ export const TrophyShelf: React.FC = () => {
                 </div>
               </div>
 
-              {/* Hover Reaction */}
               <AnimatePresence>
                 {hoveredIndex === index && (
                   <motion.div
@@ -127,7 +121,7 @@ export const TrophyShelf: React.FC = () => {
                     <div className="bg-slate-800 text-white px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap shadow-xl">
                       🔥 {achievement.reaction}
                     </div>
-                    <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-slate-800 mx-auto"></div>
+                    <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-slate-800 mx-auto" />
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -141,12 +135,12 @@ export const TrophyShelf: React.FC = () => {
             {achievements.map((achievement, index) => (
               <div key={index} className="flex-shrink-0 w-32">
                 <div className="aspect-square relative overflow-hidden rounded-xl bg-white/60 backdrop-blur-sm border border-white/20 shadow-lg">
-                  <img 
+                  <img
                     src={achievement.image}
                     alt={achievement.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${achievement.color} opacity-20`}></div>
+                  <div className={`absolute inset-0 bg-gradient-to-t ${achievement.color} opacity-20`} />
                   <div className="absolute top-2 right-2 text-lg">
                     {achievement.emoji}
                   </div>
