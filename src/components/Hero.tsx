@@ -16,7 +16,7 @@ const roles = [
 const techStack = [
   { name: "JavaScript", icon: Code, color: "from-yellow-400/80 to-orange-500/80" },
   { name: "React", icon: Brain, color: "from-cyan-400/80 to-blue-500/80" },
-  { name: "Node.js", icon: Workflow, color: "from-green-400/80 to-emerald-500/80" },
+  { name: "Node.js", icon: Layers, color: "from-green-400/80 to-emerald-500/80" },
    { name: "TypeScript", icon: Code, color: "from-blue-400/80 to-purple-500/80" },
   { name: "MongoDB", icon: Database, color: "from-green-500/80 to-teal-600/80" },
   { name: "PostgreSQL", icon: Database, color: "from-indigo-400/80 to-indigo-600/80" },

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Brain, Code, TrendingUp, Zap, Coffee, Database, Globe, Workflow, BarChart3, GitBranch, Cloud, Cpu, PieChart, Activity } from 'lucide-react';
+import { Brain, Code, TrendingUp, Zap, Coffee, Database, Globe, Layers, BarChart3, GitBranch, Cloud, Cpu, PieChart, Activity } from 'lucide-react';
 import { fadeInLeft, fadeInRight, staggerContainer, bounceIn } from '../utils/animations';
 import ProfileImage from '../assets/AdobeExpress-file.png';
 
