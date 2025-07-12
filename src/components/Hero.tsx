@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Download, Code, Database, BarChart3, Brain, ArrowDown, Cloud, Code2Icon } from 'lucide-react';
+import { Github, Linkedin, Download, Code, Database, BarChart3, Brain, ArrowDown, Cloud, Code2Icon, CpuIcon, TrendingUpIcon, GitBranchIcon } from 'lucide-react';
 import { fadeInUp, staggerContainer, bounceIn } from '../utils/animations';
 
 const roles = [
@@ -20,10 +20,10 @@ const techStack = [
    { name: "TypeScript", icon: Code, color: "from-blue-400/80 to-purple-500/80" },
   { name: "MongoDB", icon: Database, color: "from-green-500/80 to-teal-600/80" },
   { name: "PostgreSQL", icon: Database, color: "from-indigo-400/80 to-indigo-600/80" },
-  { name: "Git & GitHub", icon: GitBranch, color: "from-gray-500/80 to-black/80" },
+  { name: "Git & GitHub", icon: GitBranchIcon, color: "from-gray-500/80 to-black/80" },
   { name: "Docker", icon: Cloud, color: "from-blue-500/80 to-sky-600/80" },
-  { name: "CI/CD", icon: TrendingUp, color: "from-violet-400/80 to-fuchsia-500/80" },
-  { name: "Agile & Scrum", icon: Cpu, color: "from-pink-400/80 to-rose-500/80" }
+  { name: "CI/CD", icon: TrendingUpIcon, color: "from-violet-400/80 to-fuchsia-500/80" },
+  { name: "Agile & Scrum", icon: CpuIcon, color: "from-pink-400/80 to-rose-500/80" }
 ];
 
 
