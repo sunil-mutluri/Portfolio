@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Brain, Code, TrendingUp, Zap, Coffee, Database, Globe, Layers, BarChart3, GitBranch, Cloud, Cpu, PieChart, Activity } from 'lucide-react';
+import { Brain, Code, TrendingUp, Zap, Coffee, Database, Globe, BarChart3, GitBranch, Cloud, Cpu, PieChart, Activity } from 'lucide-react';
 import { fadeInLeft, fadeInRight, staggerContainer, bounceIn } from '../utils/animations';
 import ProfileImage from '../assets/AdobeExpress-file.png';
 
@@ -94,9 +94,9 @@ export const About: React.FC = () => {
               ABOUT ME
             </motion.p>
             <h2 className="text-5xl md:text-6xl font-light mb-8 text-slate-800 leading-tight">
-              Engineer turned
+              Software Developer turned
               <br />
-              <span className="italic">Semi-Colon Slayer</span>
+              <span className="italic">Full-Stack Illusionist</span>
             </h2>
             <p className="text-xl text-slate-600 leading-relaxed mb-8 font-light">
               Obsessed with systems, syntax, and spaghetti.

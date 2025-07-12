@@ -56,7 +56,7 @@ export const Contact: React.FC = () => {
             <span className="italic">connect</span>
           </h2>
           <p className="text-xl text-slate-500 max-w-2xl mx-auto font-light">
-            Ready to transform data into insights? Let's chat about your next project over virtual coffee.
+            End-to-end development? I’m your engineer — let’s connect over virtual coffee.
           </p>
         </motion.div>
 

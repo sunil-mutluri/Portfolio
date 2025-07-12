@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
           </div>
           
           <p className="text-sm text-slate-400 font-light">
-            © 2024 Sunil Kumar Mutluri. All rights reserved.
+            © 2025 Sunil Kumar Mutluri. All rights reserved.
           </p>
           
           <div className="flex items-center justify-center gap-2 text-xs text-slate-400">
