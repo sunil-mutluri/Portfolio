@@ -96,7 +96,7 @@ export const About: React.FC = () => {
             <h2 className="text-5xl md:text-6xl font-light mb-8 text-slate-800 leading-tight">
               Software Developer turned
               <br />
-              <span className="italic">Full-Stack Illusionist</span>
+              <span className="italic">Full-Stack illusionist</span>
             </h2>
             <p className="text-xl text-slate-600 leading-relaxed mb-8 font-light">
               Obsessed with systems, syntax, and spaghetti.

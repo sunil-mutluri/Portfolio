@@ -77,12 +77,13 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 opacity-[0.02] bg-[radial-gradient(circle_at_1px_1px,_rgba(0,0,0,0.15)_1px,_transparent_0)] bg-[length:40px_40px]"></div>
 
       <motion.div className="text-center z-10 max-w-5xl mx-auto px-8" variants={staggerContainer} initial="hidden" animate="visible">
-        <motion.p variants={fadeInUp} className="text-sm uppercase tracking-[0.3em] text-slate-500 mb-8 font-light">
-          
-           <code>
-            const engineer = new ProblemSolver("full-stack", &#123; coffee: true &#125;);
-          </code>
-        </motion.p>
+       <motion.p variants={fadeInUp} className="text-sm uppercase tracking-[0.3em] text-slate-500 mb-8 font-light">
+        <code className="text-xs italic font-light">
+         const engineer = new ProblemSolver("full-stack", &#123; coffee: true &#125;);
+        </code>
+      </motion.p>
+  
+
 
         <motion.h1 variants={fadeInUp} className="text-6xl md:text-8xl lg:text-9xl font-extralight mb-6 text-slate-800 leading-[0.85] tracking-tight" style={{ fontFamily: "'Inter', sans-serif" }}>
           <span className="block">Sunil Kumar</span>
